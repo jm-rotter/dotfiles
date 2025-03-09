@@ -1,0 +1,42 @@
+[Desktop Entry]
+FullScreen=false
+shouldShowMenuBarComingFromFullScreen=true
+shouldShowToolBarComingFromFullScreen=true
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+1920x1080 screen: Height=1080
+1920x1080 screen: Width=1920
+1920x1080 screen: XPosition=0
+1920x1080 screen: YPosition=0
+2 screens: Height=1355
+2 screens: Width=2560
+2 screens: XPosition=0
+2 screens: YPosition=37
+HDMI-1 eDP-1=HDMI-1
+eDP-1=eDP-1
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/Personalbogen_LfF_HK_12.2021_neu.pdf
+File10[$e]=$HOME/TUM/GBS/endterm/moeps_law/moeps_law.pdf
+File2[$e]=$HOME/Downloads/Einstellungsvorschlag-Hiwi-Student_08-2024.pdf
+File3[$e]=$HOME/Downloads/Personalbogen_LfF_HK_12.2021.pdf
+File4[$e]=$HOME/Downloads/Personalbogen_Stud_01.08.2024.pdf
+File5[$e]=$HOME/Downloads/Versicherungspflicht_LfF_Studenten_A732_10.2022.pdf
+File6[$e]=$HOME/TUM/GBS/endterm/exam-correction.pdf
+File7[$e]=$HOME/TUM/GBS/endterm/exam-solution.pdf
+File8[$e]=$HOME/TUM/GBS/endterm/exam.pdf
+File9[$e]=$HOME/TUM/GBS/endterm/moeps_law/build/moeps_law.pdf.d
+Name1[$e]=Personalbogen_LfF_HK_12.2021_neu.pdf
+Name10[$e]=moeps_law.pdf
+Name2[$e]=Einstellungsvorschlag-Hiwi-Student_08-2024.pdf
+Name3[$e]=Personalbogen_LfF_HK_12.2021.pdf
+Name4[$e]=Personalbogen_Stud_01.08.2024.pdf
+Name5[$e]=Versicherungspflicht_LfF_Studenten_A732_10.2022.pdf
+Name6[$e]=exam-correction.pdf
+Name7[$e]=exam-solution.pdf
+Name8[$e]=exam.pdf
+Name9[$e]=moeps_law.pdf.d
