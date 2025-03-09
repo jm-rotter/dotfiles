@@ -26,11 +26,8 @@ alias cfig='nvim ~/.bashrc'
 alias cup='source ~/.bashrc'
 alias blue='blueman-manager'
 alias q='exit'
-. "$HOME/.cargo/env"
 xcape -e "Caps_Lock=Escape" 
 alias lpp="lp -o StapleLocation=SinglePortrait -o Duplex=DuplexNoTumble"
-alias audio="pkill pulseaudio && pulseaudio --start"
-export LD_PRELOAD="/home/jr/utils/stderred/build/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
 alias sgpu='ssh -i ~/.ssh/kgpu.conf ubuntu@138.246.238.185'
 
 # Improve ls output with human-readable sizes, grouped directories first, and sorted by time
