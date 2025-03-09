@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Update and upgrade the system
@@ -20,7 +19,26 @@ sudo apt install -y \
 
 
 mv ~\dotfiles\.zshrc ~\
-# Optional: Set Zsh as the default shell
+
+
+echo "Installing Oh My Zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+curl -sL zplug.sh/installer | zsh
+echo "source ~/.zplug/init.zsh" >> ~/.zshrc
+echo 'zplug "zsh-users/zsh-syntax-highlighting"' >> ~/.zshrc
+echo 'zplug "zsh-users/zsh-autosuggestions"' >> ~/.zshrc
+
+echo 'export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)' >> ~/.zshrc
+echo 'export ZSH_AUTOSUGGEST_STRATEGY=(completion)' >> ~/.zshrc
+source ~/.zshrc
+
+zplug install
+#
+# Optional: Set
+# Zsh as the default shell
 chsh -s $(which zsh)
+
+exec $SHELL
 
 echo "Setup complete!"
