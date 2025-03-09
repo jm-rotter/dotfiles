@@ -21,8 +21,9 @@ sudo apt install -y \
 
 
 echo "Installing Oh My Zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+echo "Next step"
 curl -sL zplug.sh/installer | zsh
 #echo "source ~/.zplug/init.zsh" >> ~/.zshrc
 #echo 'zplug "zsh-users/zsh-syntax-highlighting"' >> ~/.zshrc
@@ -39,7 +40,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/cust
 
 source ~/.zshrc
 
-exec $SHELL
 
 # Optional: Set
 # Zsh as the default shell
