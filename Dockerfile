@@ -1,6 +1,8 @@
 #Use an official Debian as a base image
 FROM debian:latest
 
+RUN sed -i 's/deb.debian.org/deb.debian.org\/debian testing main/' /etc/apt/sources.list && \
+    sed -i 's/security.debian.org/deb.debian.org\/debian testing/'
 # Update the package list and install sudo and git
 RUN apt-get update && \
     apt-get install -y sudo git 

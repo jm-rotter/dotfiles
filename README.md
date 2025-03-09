@@ -5,7 +5,8 @@ Work in Progress/Don't use
 
 
 Run :PackerInstall in nvim
-
+:PackerSync
+nvim +PackerSync
 
 
 
