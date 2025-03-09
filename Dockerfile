@@ -1,4 +1,4 @@
- Use an official Debian as a base image
+#Use an official Debian as a base image
 FROM debian:latest
 
 # Update the package list and install sudo and git
@@ -16,6 +16,7 @@ USER testuser
 # Set the default working directory
 WORKDIR /home/testuser
 
-# Start with a shell
-CMD ["/bin/bash"]
+RUN git clone https://github.com/jm-rotter/dotfiles.git
 
+# Start with a shell
+CMD ["bash"] 

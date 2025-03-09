@@ -30,7 +30,7 @@ curl -sL zplug.sh/installer | zsh
 
 #echo 'export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)' >> ~/.zshrc
 #echo 'export ZSH_AUTOSUGGEST_STRATEGY=(completion)' >> ~/.zshrc
-
+echo "Moving zshrc"
 mv -f ~/dotfiles/.zshrc ~/
 mv ~/dotfiles/aliases.zsh ~/.oh-my-zsh/custom/
 source ~/.zshrc
