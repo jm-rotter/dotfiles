@@ -1,12 +1,14 @@
 #Use an official Debian as a base image
 FROM debian:latest
 
-RUN sed -i 's/deb.debian.org/deb.debian.org\/debian testing main/' /etc/apt/sources.list && \
-    sed -i 's/security.debian.org/deb.debian.org\/debian testing/'
 # Update the package list and install sudo and git
 RUN apt-get update && \
     apt-get install -y sudo git 
 
+run echo "deb http://deb.debian.org/debian testing main" > /etc/apt/sources.list && \
+    echo "deb-src http://deb.debian.org/debian testing main" >> /etc/apt/sources.list && \
+    echo "deb http://security.debian.org/debian-security testing/updates main" >> /etc/apt/sources.list && \
+    echo "deb-src http://security.debian.org/debian-security testing/updates main" >> /etc/apt/sources.list
 # Set up a user and add them to the sudo group
 RUN useradd -m -s /bin/bash testuser && \
     echo "testuser:password" | chpasswd && \
