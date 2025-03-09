@@ -39,6 +39,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/cust
 
 source ~/.zshrc
 
+exec $SHELL
+
 # Optional: Set
 # Zsh as the default shell
 chsh -s $(which zsh)
