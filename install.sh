@@ -8,7 +8,6 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y \
     git \
     zsh \
-    vim \
     neovim \
     tmux \
     htop \
@@ -17,8 +16,10 @@ sudo apt install -y \
     python3-pip \
     docker.io \
     tree \
+	ranger \
 
 
+mv ~\dotfiles\.zshrc ~\
 # Optional: Set Zsh as the default shell
 chsh -s $(which zsh)
 
