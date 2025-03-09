@@ -1,3 +1,3 @@
 # dotfiles
 
-Work in Progress
+Work in Progress/Don't use
