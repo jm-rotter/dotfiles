@@ -17,7 +17,7 @@ sudo apt install -y \
     tree \
 	ranger \
 	xcape \
-
+    fzf \
 
 
 echo "Installing Oh My Zsh..."

@@ -21,5 +21,8 @@ source ~/.zshrc
 # Zsh as the default shell
 chsh -s $(which zsh)
 
+mv ~/dotfiles/.config ~/
+
+zsh
 
 echo "Setup complete!"
