@@ -1,5 +1,3 @@
-fterm not yet working
-
 #dotfiles
 If you would like to test first use Dockerfile.
 

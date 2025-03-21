@@ -6,6 +6,7 @@ require'FTerm'.setup({
         height = 0.9,
         width = 0.9,
     },
+	cmd = '/bin/zsh',
 })
 
 vim.keymap.set('n', '<c-t>', '<CMD>lua require("FTerm").toggle()<CR>')
